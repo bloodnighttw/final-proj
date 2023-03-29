@@ -1,0 +1,51 @@
+﻿.bg-dark h1{
+    color: white;
+}
+
+.nav-card{
+    margin-top: 10px;
+}
+
+.dark{
+    background-color: darkgoldenrod;
+}
+
+.dark div{
+    background-color: white;
+}
+
+.container-xxl {
+    max-width: 1600px;
+}
+
+.img{
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+#nav-avater-menu{
+    position: absolute;
+    
+}
+
+.search-menu{
+
+    width:  1250 px;
+
+}
+
+.center-text{
+    width: 50%;
+    margin: auto;
+}
+
+.title{
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+nav p{
+    color: white;
+}
