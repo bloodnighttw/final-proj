@@ -49,3 +49,13 @@
 nav p{
     color: white;
 }
+
+footer{
+    padding: 5px;
+}
+
+footer p{
+    color: gray;
+    margin: auto;
+    text-align: center;
+}
