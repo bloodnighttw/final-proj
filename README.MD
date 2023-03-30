@@ -1,5 +1,6 @@
 ﻿# PROJ
 
-- [ ] sign in page
-- [ ] vip page
+- [x] sign in page
+- [ ] profile edit
+- [ ] vip page -- half
 - [ ] content page.
