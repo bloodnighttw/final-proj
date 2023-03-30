@@ -18,8 +18,12 @@
     max-width: 1600px;
 }
 
-.img{
+.img-box{
     margin-right: 15px;
+    position: relative;
+}
+
+.img{
     border-radius: 50%;
 }
 
@@ -35,15 +39,16 @@
 }
 
 .center-text{
-    width: 50%;
+    width:60%;
     margin: auto;
 }
 
-.title{
+nav .title{
     margin: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    text-align: center;
 }
 
 nav p{

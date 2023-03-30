@@ -1,0 +1,42 @@
+﻿
+.preview-box{
+    height: 150px;
+    margin-bottom: 25px;
+}
+
+.preview-link{
+    text-decoration: none;
+    color: black;
+}
+
+.preview-box a:visited{
+    color: black;
+}
+
+.preview-box a{
+    color: black;
+}
+
+.title-preview{
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.content-preview{
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;   
+    color: gray;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+
