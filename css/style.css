@@ -6,15 +6,15 @@
 
 .preview-link{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .preview-box a:visited{
-    color: black;
+    color: white;
 }
 
 .preview-box a{
-    color: black;
+    color: white;
 }
 
 .title-preview{
@@ -39,6 +39,10 @@
     white-space: normal;
 }
 
+.preview-box:hover{
+    background-color: #292b2c;
+}
+
 #caro img{
     height: 500px;
     object-fit: cover;
@@ -47,4 +51,7 @@
 .container0padding{
     padding: 0;
 }
+
+/*     background-color: #292b2c;
+*/
 

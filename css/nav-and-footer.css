@@ -51,7 +51,11 @@ nav .title{
     text-align: center;
 }
 
-nav p{
+.bg-dark p{
+    color: white;
+}
+
+h3{
     color: white;
 }
 
@@ -65,3 +69,12 @@ footer p{
     text-align: center;
 }
 
+
+.badge-center{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.samebg{
+    background-color: rgb(43, 48, 53);
+}

@@ -2,5 +2,5 @@
 
 - [x] sign in page
 - [ ] profile edit
-- [ ] vip page -- half
+- [x] vip page
 - [ ] content page.
