@@ -26,7 +26,10 @@
 
 body{
     background-image: url('img/login.jpg');
-    background-position: center;
-
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size:     cover;     
+    object-fit: cover;
 }
 

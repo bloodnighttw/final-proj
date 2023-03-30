@@ -39,4 +39,12 @@
     white-space: normal;
 }
 
+#caro img{
+    height: 500px;
+    object-fit: cover;
+}
+
+.container0padding{
+    padding: 0;
+}
 
