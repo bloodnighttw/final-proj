@@ -1,9 +1,9 @@
 ﻿.top-margin {
-    min-height: 650px;
+    min-height: 400px;
 }
 
 .top-margin:hover {
-    background-color: #292b2c;
+    background-color: #6e6e6e;
 }
 
 .vip-info h1{
@@ -11,15 +11,16 @@
 }
 
 .vip-info p{
-    padding: 5px;
+    padding: 10px;
 }
 
 .vip-info img{
-    height: 100%;
+    height: 150px;
     width: 100%;
     padding: 0%;
     object-fit: cover;
 }
+
 
 
 
@@ -41,7 +42,22 @@
     filter: grayscale(0%);
 }
 
-.purchase-card{
-    min-height: 400px;
+
+
+
+.purchase-card:hover {
+    background-color: #6e6e6e;
 }
 
+a{
+    text-decoration: none;
+}
+
+
+a:visited{
+    color: white;
+}
+
+a{
+    color: white;
+}

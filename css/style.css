@@ -39,8 +39,10 @@
     white-space: normal;
 }
 
+
+
 .preview-box:hover{
-    background-color: #292b2c;
+    background-color: #6e6e6e;
 }
 
 #caro img{
