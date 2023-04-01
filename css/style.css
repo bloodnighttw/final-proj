@@ -57,3 +57,53 @@
 /*     background-color: #292b2c;
 */
 
+.carousel-control-next,.carousel-control-prev ,.carousel-indicators {
+    filter: invert(100%);
+}
+
+.profile-edit img{
+    padding: 15px;
+}
+
+.profile-edit{
+    max-width: 500px;
+}
+
+.profile-edit input,textarea { 
+    text-align: center; 
+}
+
+.profile-edit input:hover{ 
+    text-align: center; 
+    background-color: #3a3a3a;
+}
+
+.profile-edit #password2,#password2l{
+    display: none;
+}
+
+textarea { resize: none; }
+
+[contenteditable] {
+    outline: 0px solid transparent;
+}
+
+
+
+.editable-css:not(:focus):empty::before {
+    content: attr(data-placeholder);
+}
+
+.editable-margin{
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+
+}
+
+.btn-margin{
+    margin: 6px; 
+}
+
+
+/* https://juejin.cn/post/7131372857682034719 */

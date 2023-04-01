@@ -1,0 +1,26 @@
+﻿.content{
+    color:gainsboro;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.content h2{
+    padding: 0;
+}
+
+.ql-bubble .ql-tooltip {
+    z-index: 1;
+}
+
+.ql-editor{
+    padding: 8px;
+    padding-top: 0;
+}
+
+.padding-left0{
+    padding-left: 0; 
+}
+
+.by{
+    padding-left: 12px;
+}
