@@ -24,3 +24,7 @@
 .by{
     padding-left: 12px;
 }
+
+.stop{
+    fill: red;
+}
