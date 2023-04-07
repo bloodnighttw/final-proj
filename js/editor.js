@@ -83,7 +83,7 @@ let default_comment = {
                 "background": "#ffffcc",
                 "size": "huge"
             },
-            "insert": " 修改而成。\n\n\n\n\n\n\n\n\n"
+            "insert": " 修改而成。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
         },
         {
             "insert": "\n\n"
@@ -114,7 +114,8 @@ $(document).ready(function(){
                 toolbar: options,
             },
             readOnly: true,
-            theme: 'bubble'
+            theme: 'bubble',
+            bounds:this
         });
         quill.setContents(default_comment.ops)
     })

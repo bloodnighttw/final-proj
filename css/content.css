@@ -8,7 +8,11 @@
     padding: 0;
 }
 
-.ql-bubble .ql-tooltip {
+.ql-bubble *{
+    z-index: 10000;
+}
+
+.ql-container{
     z-index: 1;
 }
 
