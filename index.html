@@ -12,6 +12,8 @@
     <script src="https://code.jquery.com/jquery-3.6.4.js"
         integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src="./js/blocker.js"></script>
+    
 </head>
 
 <body class="bg-dark" data-bs-theme="dark">
@@ -146,7 +148,7 @@
     </nav>
     <br>
 
-    <div class="container">
+    <div class="container" id="body">
 
         <div class="container container0padding shadow">
             <div id="caro" class="carousel slide ">
@@ -190,12 +192,24 @@
 
         <br>
 
-        <div class="container">
 
-        </div>
+
         <div class="row">
 
+            <div class="col-lg-6 col-12 ">
+                <a href="https://google.com" class="preview-link">
+                    <div class=" adbox container rounded shadow bg-danger  preview-box">
+                        <h3 class="title-preview">廣告</h3>
+                        <p class="content-preview">
+                            adsence沒辦法用Text ad ，只好另外找了。
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+
             <div class="col-lg-6 col-12">
+
 
                 <a href="./content.html" class="preview-link">
                     <div class="container rounded shadow bg-danger  preview-box">

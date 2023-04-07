@@ -7,4 +7,6 @@
 
 admin.html 沒有網站連結到
 
-![GITHUB](https://github.com/bloodnighttw/final-proj)
+此網站我有寫Adblocker detecter，目前僅使用Adguard測試過。
+
+[GITHUB](https://github.com/bloodnighttw/final-proj)

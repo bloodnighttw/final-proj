@@ -12,6 +12,8 @@
     <script src="https://code.jquery.com/jquery-3.6.4.js"
         integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src="./js/blocker.js"></script>
+
 </head>
 
 <script>
@@ -43,7 +45,9 @@
 <body class="bg-dark" data-bs-theme="dark">
 
     <nav class="navbar bg-body-tertiary sticky-top bg-dark" data-bs-theme="dark">
-        <div class="container-xxl ">
+        <div class="container">
+
+            
 
             <div>
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
@@ -172,11 +176,19 @@
     </nav>
     <br>
 
-    <div class="container-xxl">
+    <div class="container" id="body" >
 
-
-
-
+            <div class="adbox  rounded container shadow  text-center profile-edit bg-danger ">
+                <a href="google.com" class="preview-link">
+                    <div class=" preview-box">
+                        <h3 class="title-preview">廣告</h3>
+                        <p class="content-preview">
+                            adsence沒辦法用Text ad ，只好另外找了。
+                        </p>
+                    </div>
+                </a>
+            </div>
+  
         <div class="rounded container shadow  text-center profile-edit">
 
             <form>
