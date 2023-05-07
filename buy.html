@@ -17,6 +17,37 @@
 
 </head>
 
+<script>
+
+    $(function () {
+        $("#buy").click(function () {
+            alert("buy")
+        })
+
+        $("#clear").click(function () {
+            alert("clear")
+        })
+
+        $(".add").click(function (e) {
+            let temp = $(this).siblings('input')
+            temp.val(Number(temp.val())+1);
+        })
+
+        $(".sub").click(function (e) {
+            let temp = $(this).siblings('input')
+            temp.val((Number(temp.val()) > 0) ? Number(temp.val()) - 1 : 0 );
+        })
+
+
+    })
+
+
+
+
+</script>
+
+
+
 <body class="bg-dark" data-bs-theme="dark">
 
     <nav class="navbar bg-body-tertiary sticky-top">
@@ -158,71 +189,9 @@
 
     <div class="container-xxl">
 
-
-        <div class="text-center archievement">
-
-            <img src="./img/sh.png" alt="" class="gray-scale" height="100">
-
-
-            <h5 class=" fw-light day">再過幾天就可以解鎖 XX 徽章</h5>
-            <div class="progress" role="progressbar" aria-label="remain day" aria-valuenow="75" aria-valuemin="0"
-                aria-valuemax="75">
-                <div class="progress-bar" style="width: 15%"></div>
-            </div>
-
-        </div>
-
-
-
-
-        <hr>
-
-        <h1 class="text-center fw-bold"> 會員可以享受到的福利</h1>
-        <hr>
-
-
-        <div class="text-center row row-cols-1 row-cols-md-2 row-cols-lg-4 vip-info">
-            <div class=" p-2 col ">
-                <div class="container rounded shadow  top-margin ">
-                    <img src="img/login.jpg" alt="">
-
-                    <h1>免費的三個獎章</h1>
-                    <p>你可以獲得免費的三個獎章，獎勵給你喜歡的文章。</p>
-                </div>
-            </div>
-
-            <div class=" p-2 col ">
-                <div class="container rounded shadow top-margin  align-items-stretch">
-                    <img src="img/login.jpg" alt="">
-
-                    <h1>我的最愛</h1>
-                    <p>擁有更多我的最愛上限，並啟用分類最愛的權限，盡可能的儲存你最愛的文章。</p>
-                </div>
-            </div>
-
-
-            <div class=" p-2 col ">
-                <div class=" container rounded shadow top-margin align-items-stretch">
-                    <img src="img/login.jpg" alt="">
-
-                    <h1>徽章展示</h1>
-                    <p>當你成為會員時，你每天將會獲得點數，累積一定數目時，會解鎖會員限定的徽章，你可以個人檔案裝備上向眾人展示。</p>
-                </div>
-            </div>
-
-            <div class=" p-2 col ">
-                <div class="container rounded shadow top-margin  align-items-stretch">
-                    <img src="img/login.jpg" alt="">
-                    <h1 class="">沒有廣告干擾</h1>
-                    <p class="text-wrap"> 少了廣告的干擾，你將更快的查詢你需要的資訊，並且同時支援本站的營運。</p>
-                </div>
-            </div>
-
-        </div>
-
-
         <br>
         <h1 class="text-center fw-bold"> 購買方案</h1>
+        <p class="text-center">任何獲得獎章的人將會獲得經驗值獎勵</p>
         <hr>
 
         <div class="text-center row row-cols-1 row-cols-md-2 row-cols-lg-4 vip-info">
@@ -232,8 +201,17 @@
                 <a href="#">
                     <div class="container rounded shadow  purchase-card ">
                         <img src="img/login.jpg" alt="">
-                        <h1>30天方案</h1>
+                        <h1>實用獎章</h1>
+                        <p>購買此獎章以獎勵你覺得非常實用的文章</p>
                         <p>$30</p>
+                        <div class="counter center-text">
+                            <div class="input-group">
+                                <button class="btn btn-danger" type="button">-</button>
+                                <input type="text" class="form-control price-30" placeholder="" value="0">
+                                <button class="btn btn-danger" type="button">+</button>
+                            </div>
+                        </div>
+
                     </div>
                 </a>
 
@@ -246,12 +224,20 @@
                     <div class="container rounded shadow purchase-card ">
                         <img src="img/login.jpg" alt="">
 
-                        <h1>120天方案</h1>
-                        <p>$100</p>
+                        <h1>XX獎章</h1>
+                        <p>(這是描述)</p>
+                        <p>$30</p>
+
+                        <div class="counter center-text">
+                            <div class="input-group">
+                                <button class="btn btn-danger sub" type="button">-</button>
+                                <input type="text" class="form-control price-30" placeholder="" value="0">
+                                <button class="btn btn-danger add" type="button">+</button>
+                            </div>
+                        </div>
+
                     </div>
                 </a>
-
-
             </div>
 
 
@@ -259,9 +245,36 @@
                 <a href="#">
                     <div class=" container rounded shadow purchase-card ">
                         <img src="img/login.jpg" alt="">
+                        <h1>火箭獎章</h1>
+                        <p>獲得此獎章的人將會獲得一個禮拜的會員</p>
+                        <p>$100</p>
+                        <div class="counter center-text">
+                            <div class="input-group">
+                                <button class="btn btn-danger sub" type="button">-</button>
+                                <input type="text" class="form-control price-100" placeholder="" value="0">
+                                <button class="btn btn-danger add" type="button">+</button>
+                            </div>
+                        </div>
 
-                        <h1>180天方案</h1>
-                        <p>$150</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class=" p-2 col ">
+                <a href="#">
+                    <div class="container rounded shadow purchase-card  ">
+                        <img src="img/login.jpg" alt="">
+                        <h1 class="">感謝獎章</h1>
+                        <p>購買此獎章以獎勵你覺得感謝的文章</p>
+                        <p>$30</p>
+                        <div class="counter center-text">
+                            <div class="input-group">
+                                <button class="btn btn-danger" type="button">-</button>
+                                <input type="text" class="form-control price-30" placeholder="" value="0">
+                                <button class="btn btn-danger" type="button">+</button>
+                            </div>
+                        </div>
+
                     </div>
                 </a>
 
@@ -272,14 +285,91 @@
                 <a href="#">
                     <div class="container rounded shadow purchase-card  ">
                         <img src="img/login.jpg" alt="">
-                        <h1 class="">365天方案</h1>
-                        <p>$250</p>
+                        <h1 class="">浣熊獎章</h1>
+                        <p>$15</p>
+                        <div class="counter center-text">
+                            <div class="input-group">
+                                <button class="btn btn-danger" type="button">-</button>
+                                <input type="text" class="form-control price-15" placeholder="" value="0">
+                                <button class="btn btn-danger" type="button">+</button>
+                            </div>
+                        </div>
+
                     </div>
                 </a>
 
 
             </div>
 
+            <div class=" p-2 col ">
+                <a href="#">
+                    <div class="container rounded shadow purchase-card  ">
+                        <img src="img/login.jpg" alt="">
+                        <h1 class="">水獺獎章</h1>
+                        <p>$15</p>
+                        <div class="counter center-text">
+                            <div class="input-group">
+                                <button class="btn btn-danger" type="button">-</button>
+                                <input type="text" class="form-control price-15" placeholder="" value="0">
+                                <button class="btn btn-danger" type="button">+</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+
+            </div>
+
+            <div class=" p-2 col ">
+                <a href="#">
+                    <div class="container rounded shadow purchase-card  ">
+                        <img src="img/login.jpg" alt="">
+                        <h1 class="">黑熊獎章</h1>
+                        <p>$15</p>
+                        <div class="counter center-text">
+                            <div class="input-group">
+                                <button class="btn btn-danger" type="button">-</button>
+                                <input type="text" class="form-control price-15" placeholder="" value="0">
+                                <button class="btn btn-danger" type="button">+</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class=" p-2 col ">
+                <a href="#">
+                    <div class="container rounded shadow purchase-card  ">
+                        <img src="img/login.jpg" alt="">
+                        <h1 class="">狗狗獎章</h1>
+                        <p>$15</p>
+                        <div class="counter center-text">
+                            <div class="input-group">
+                                <button class="btn btn-danger" type="button">-</button>
+                                <input type="text" class="form-control price-15" placeholder="" value="0">
+                                <button class="btn btn-danger" type="button">+</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <hr>
+
+        <div class="d-flex justify-content-end align-items-center">
+            <h2 class="align-self-center me-2">總共20元</h2>
+            <h2 class=" align-self-center btn btn-danger me-2" type="button" id="clear">清除</h2>
+            <h2 class=" align-self-center btn btn-primary" type="button" id="buy">結帳</h2>
         </div>
 
 

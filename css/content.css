@@ -63,3 +63,14 @@
 .badge-list:hover .badge-content{
     display: block;
 }
+
+.func-menu:hover svg{
+    fill: gray
+}
+
+
+
+.vote:hover svg{
+    fill: gray
+}
+

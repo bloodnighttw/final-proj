@@ -22,7 +22,9 @@
 }
 
 
-
+h1,p{
+    margin-bottom: 0;
+}
 
 .container{
     padding: 0;
@@ -44,7 +46,6 @@
 
 
 
-
 .purchase-card:hover {
     background-color: #6e6e6e;
 }
@@ -60,4 +61,16 @@ a:visited{
 
 a{
     color: white;
+}
+
+.counter{
+    width: 150px;
+}
+
+input{
+    text-align: center;
+}
+
+.purchase-card .input-group{
+    margin-bottom: 12px;
 }
